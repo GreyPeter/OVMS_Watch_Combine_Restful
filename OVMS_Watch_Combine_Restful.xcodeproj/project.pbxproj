@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0A525D22C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D0A525D12C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0A525D72C7DBD550014C3D1 /* OVMS_Watch_Combine_RestfulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A525D62C7DBD550014C3D1 /* OVMS_Watch_Combine_RestfulApp.swift */; };
+		D0A525D92C7DBD550014C3D1 /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A525D82C7DBD550014C3D1 /* WatchView.swift */; };
+		D0A525DB2C7DBD570014C3D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A525DA2C7DBD570014C3D1 /* Assets.xcassets */; };
+		D0A525DE2C7DBD570014C3D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A525DD2C7DBD570014C3D1 /* Preview Assets.xcassets */; };
+		D0A525ED2C7DBDDA0014C3D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A525E92C7DBDDA0014C3D1 /* SettingsView.swift */; };
+		D0A525EE2C7DBDDA0014C3D1 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A525EA2C7DBDDA0014C3D1 /* ProgressBar.swift */; };
+		D0A525EF2C7DBDDA0014C3D1 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A525EB2C7DBDDA0014C3D1 /* SubView.swift */; };
+		D0A525F32C7DBE070014C3D1 /* DefaultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A525F12C7DBE070014C3D1 /* DefaultViewModel.swift */; };
+		D0A525FB2C7DBE150014C3D1 /* Charge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A525F42C7DBE140014C3D1 /* Charge.swift */; };
+		D0A525FC2C7DBE150014C3D1 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A525F52C7DBE140014C3D1 /* Location.swift */; };
+		D0A525FD2C7DBE150014C3D1 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A525F62C7DBE140014C3D1 /* Status.swift */; };
+		D0A525FE2C7DBE150014C3D1 /* TokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A525F72C7DBE140014C3D1 /* TokenData.swift */; };
+		D0A525FF2C7DBE150014C3D1 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A525F82C7DBE140014C3D1 /* Vehicle.swift */; };
+		D0A526002C7DBE150014C3D1 /* WKDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A525F92C7DBE140014C3D1 /* WKDelegate.swift */; };
+		D0A526062C7DBE250014C3D1 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A526012C7DBE250014C3D1 /* Webservice.swift */; };
+		D0A526072C7DBE250014C3D1 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A526032C7DBE250014C3D1 /* KeychainService.swift */; };
+		D0A526082C7DBE250014C3D1 /* TimeConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A526042C7DBE250014C3D1 /* TimeConvert.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0A525D32C7DBD550014C3D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0A525C52C7DBD550014C3D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0A525D02C7DBD550014C3D1;
+			remoteInfo = "OVMS_Watch_Combine_Restful Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0A525E42C7DBD570014C3D1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D0A525D22C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D0A525CB2C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OVMS_Watch_Combine_Restful.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A525D12C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OVMS_Watch_Combine_Restful Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0A525D62C7DBD550014C3D1 /* OVMS_Watch_Combine_RestfulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OVMS_Watch_Combine_RestfulApp.swift; sourceTree = "<group>"; };
+		D0A525D82C7DBD550014C3D1 /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
+		D0A525DA2C7DBD570014C3D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0A525DD2C7DBD570014C3D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0A525E92C7DBDDA0014C3D1 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D0A525EA2C7DBDDA0014C3D1 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		D0A525EB2C7DBDDA0014C3D1 /* SubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
+		D0A525F12C7DBE070014C3D1 /* DefaultViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultViewModel.swift; sourceTree = "<group>"; };
+		D0A525F42C7DBE140014C3D1 /* Charge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charge.swift; sourceTree = "<group>"; };
+		D0A525F52C7DBE140014C3D1 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		D0A525F62C7DBE140014C3D1 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		D0A525F72C7DBE140014C3D1 /* TokenData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenData.swift; sourceTree = "<group>"; };
+		D0A525F82C7DBE140014C3D1 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		D0A525F92C7DBE140014C3D1 /* WKDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKDelegate.swift; sourceTree = "<group>"; };
+		D0A526012C7DBE250014C3D1 /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		D0A526032C7DBE250014C3D1 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		D0A526042C7DBE250014C3D1 /* TimeConvert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeConvert.swift; sourceTree = "<group>"; };
+		D0D90B412C7DD22D0030DC55 /* OVMS-Watch-Combine-Restful-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OVMS-Watch-Combine-Restful-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0A525CE2C7DBD550014C3D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0A525C42C7DBD550014C3D1 = {
+			isa = PBXGroup;
+			children = (
+				D0A525D52C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful Watch App */,
+				D0A525CC2C7DBD550014C3D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0A525CC2C7DBD550014C3D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0A525CB2C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful.app */,
+				D0A525D12C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0A525D52C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				D0D90B412C7DD22D0030DC55 /* OVMS-Watch-Combine-Restful-Watch-App-Info.plist */,
+				D0A525E82C7DBDAF0014C3D1 /* Views */,
+				D0A525F22C7DBE070014C3D1 /* View Models */,
+				D0A525FA2C7DBE140014C3D1 /* Models */,
+				D0A526022C7DBE250014C3D1 /* Services */,
+				D0A526052C7DBE250014C3D1 /* Helpers */,
+				D0A525D62C7DBD550014C3D1 /* OVMS_Watch_Combine_RestfulApp.swift */,
+				D0A525DA2C7DBD570014C3D1 /* Assets.xcassets */,
+				D0A525DC2C7DBD570014C3D1 /* Preview Content */,
+			);
+			path = "OVMS_Watch_Combine_Restful Watch App";
+			sourceTree = "<group>";
+		};
+		D0A525DC2C7DBD570014C3D1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D0A525DD2C7DBD570014C3D1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0A525E82C7DBDAF0014C3D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0A525D82C7DBD550014C3D1 /* WatchView.swift */,
+				D0A525EA2C7DBDDA0014C3D1 /* ProgressBar.swift */,
+				D0A525E92C7DBDDA0014C3D1 /* SettingsView.swift */,
+				D0A525EB2C7DBDDA0014C3D1 /* SubView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0A525F22C7DBE070014C3D1 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0A525F12C7DBE070014C3D1 /* DefaultViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		D0A525FA2C7DBE140014C3D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0A525F42C7DBE140014C3D1 /* Charge.swift */,
+				D0A525F52C7DBE140014C3D1 /* Location.swift */,
+				D0A525F62C7DBE140014C3D1 /* Status.swift */,
+				D0A525F72C7DBE140014C3D1 /* TokenData.swift */,
+				D0A525F82C7DBE140014C3D1 /* Vehicle.swift */,
+				D0A525F92C7DBE140014C3D1 /* WKDelegate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0A526022C7DBE250014C3D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D0A526012C7DBE250014C3D1 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D0A526052C7DBE250014C3D1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D0A526032C7DBE250014C3D1 /* KeychainService.swift */,
+				D0A526042C7DBE250014C3D1 /* TimeConvert.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0A525CA2C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0A525E52C7DBD570014C3D1 /* Build configuration list for PBXNativeTarget "OVMS_Watch_Combine_Restful" */;
+			buildPhases = (
+				D0A525C92C7DBD550014C3D1 /* Resources */,
+				D0A525E42C7DBD570014C3D1 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0A525D42C7DBD550014C3D1 /* PBXTargetDependency */,
+			);
+			name = OVMS_Watch_Combine_Restful;
+			productName = OVMS_Watch_Combine_Restful;
+			productReference = D0A525CB2C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		D0A525D02C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0A525E12C7DBD570014C3D1 /* Build configuration list for PBXNativeTarget "OVMS_Watch_Combine_Restful Watch App" */;
+			buildPhases = (
+				D0A525CD2C7DBD550014C3D1 /* Sources */,
+				D0A525CE2C7DBD550014C3D1 /* Frameworks */,
+				D0A525CF2C7DBD550014C3D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OVMS_Watch_Combine_Restful Watch App";
+			productName = "OVMS_Watch_Combine_Restful Watch App";
+			productReference = D0A525D12C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0A525C52C7DBD550014C3D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D0A525CA2C7DBD550014C3D1 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					D0A525D02C7DBD550014C3D1 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = D0A525C82C7DBD550014C3D1 /* Build configuration list for PBXProject "OVMS_Watch_Combine_Restful" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0A525C42C7DBD550014C3D1;
+			productRefGroup = D0A525CC2C7DBD550014C3D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0A525CA2C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful */,
+				D0A525D02C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0A525C92C7DBD550014C3D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0A525CF2C7DBD550014C3D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A525DE2C7DBD570014C3D1 /* Preview Assets.xcassets in Resources */,
+				D0A525DB2C7DBD570014C3D1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0A525CD2C7DBD550014C3D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A525FF2C7DBE150014C3D1 /* Vehicle.swift in Sources */,
+				D0A525ED2C7DBDDA0014C3D1 /* SettingsView.swift in Sources */,
+				D0A525FD2C7DBE150014C3D1 /* Status.swift in Sources */,
+				D0A525FB2C7DBE150014C3D1 /* Charge.swift in Sources */,
+				D0A525FE2C7DBE150014C3D1 /* TokenData.swift in Sources */,
+				D0A525D92C7DBD550014C3D1 /* WatchView.swift in Sources */,
+				D0A525FC2C7DBE150014C3D1 /* Location.swift in Sources */,
+				D0A526072C7DBE250014C3D1 /* KeychainService.swift in Sources */,
+				D0A526062C7DBE250014C3D1 /* Webservice.swift in Sources */,
+				D0A525F32C7DBE070014C3D1 /* DefaultViewModel.swift in Sources */,
+				D0A525EE2C7DBDDA0014C3D1 /* ProgressBar.swift in Sources */,
+				D0A526082C7DBE250014C3D1 /* TimeConvert.swift in Sources */,
+				D0A525D72C7DBD550014C3D1 /* OVMS_Watch_Combine_RestfulApp.swift in Sources */,
+				D0A526002C7DBE150014C3D1 /* WKDelegate.swift in Sources */,
+				D0A525EF2C7DBDDA0014C3D1 /* SubView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0A525D42C7DBD550014C3D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0A525D02C7DBD550014C3D1 /* OVMS_Watch_Combine_Restful Watch App */;
+			targetProxy = D0A525D32C7DBD550014C3D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D0A525DF2C7DBD570014C3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0A525E02C7DBD570014C3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D0A525E22C7DBD570014C3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OVMS_Watch_Combine_Restful Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = KNRM248MZK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OVMS-Watch-Combine-Restful-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = OVMS_Watch_Combine_Restful;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.prh.OVMS-Watch-Combine-Restful.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		D0A525E32C7DBD570014C3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OVMS_Watch_Combine_Restful Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = KNRM248MZK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OVMS-Watch-Combine-Restful-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = OVMS_Watch_Combine_Restful;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.prh.OVMS-Watch-Combine-Restful.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		D0A525E62C7DBD570014C3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KNRM248MZK;
+				INFOPLIST_KEY_CFBundleDisplayName = OVMS_Watch_Combine_Restful;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.prh.OVMS-Watch-Combine-Restful";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D0A525E72C7DBD570014C3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KNRM248MZK;
+				INFOPLIST_KEY_CFBundleDisplayName = OVMS_Watch_Combine_Restful;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.prh.OVMS-Watch-Combine-Restful";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0A525C82C7DBD550014C3D1 /* Build configuration list for PBXProject "OVMS_Watch_Combine_Restful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0A525DF2C7DBD570014C3D1 /* Debug */,
+				D0A525E02C7DBD570014C3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0A525E12C7DBD570014C3D1 /* Build configuration list for PBXNativeTarget "OVMS_Watch_Combine_Restful Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0A525E22C7DBD570014C3D1 /* Debug */,
+				D0A525E32C7DBD570014C3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0A525E52C7DBD570014C3D1 /* Build configuration list for PBXNativeTarget "OVMS_Watch_Combine_Restful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0A525E62C7DBD570014C3D1 /* Debug */,
+				D0A525E72C7DBD570014C3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0A525C52C7DBD550014C3D1 /* Project object */;
+}
