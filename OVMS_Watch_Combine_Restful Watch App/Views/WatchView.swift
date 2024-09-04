@@ -14,16 +14,26 @@ enum CarMode {
     case driving
     case charging
     case idle
-    var identifier: String {
-        switch self {
-        case .driving:
-            return "Driving"
-        case .charging:
-            return "Charging"
-        case .idle:
-            return "Parked"
-        }
-    }
+	var identifier: String {
+		switch self {
+		case .driving:
+			return "Driving"
+		case .charging:
+			return "Charging"
+		case .idle:
+			return "Parked"
+		}
+	}
+	var color: Color {
+		switch self {
+		case .driving:
+			return .blue
+		case .charging:
+			return .red
+		case .idle:
+			return .green
+		}
+	}
 }
 
 struct WatchView: View {
@@ -41,10 +51,20 @@ struct WatchView: View {
     var body: some View {
         let socDouble = Double(model.status.soc) ?? 0.0
         let carMode = model.carMode
-        let tint = carMode == .driving ? Color(.green) : Color(.clear)
 
         GeometryReader { watchGeo in
             VStack {
+				Button(action: {
+					print("Button Pressed")
+				}, label: {
+					VStack {
+						Text(model.getVehicleID())
+						Text("chg: \(model.charge.charging) stat: \(model.status.charging)")
+					}
+				})
+				.controlSize(.mini)
+				.tint(carMode.color)
+
                 Button(action: {
                     print("Button Pressed")
                 }, label: {
@@ -77,7 +97,7 @@ struct WatchView: View {
                                 .opacity(0.9))
                 })
                 .controlSize(.mini)
-                .tint(tint)
+				.tint(carMode.color)
                 switch carMode {
                 case .charging:
                     SubView(Text1: "Full", Data1: timeConvert(time: model.charge.charge_etr_full), 
@@ -161,9 +181,17 @@ struct WatchView: View {
                 model.initCookie()
             } else {
                 if let myCookie = keyChainService.retrievePassword(for: "Cookie") {
-                    model.getStatus(cookie: myCookie)
-                    model.getCharge(cookie: myCookie)
-                    model.getLocation(cookie: myCookie)
+					switch carMode {
+					case .charging:
+						model.getCharge(cookie: myCookie)
+					case .driving:
+						model.getLocation(cookie: myCookie)
+					default:
+						model.getStatus(cookie: myCookie)
+					}
+//                    model.getStatus(cookie: myCookie)
+//                    model.getCharge(cookie: myCookie)
+//                    model.getLocation(cookie: myCookie)
                 }
             }
             print("Count = \(count)")

@@ -142,7 +142,7 @@ class DefaultViewModel: ObservableObject {
                 
                 if let httpStatus = response as? HTTPURLResponse {
                     if httpStatus.statusCode == 200 {
-                        print("response = \(String(describing: response))")
+                        //print("response = \(String(describing: response))")
                         if let newCookie = httpStatus.value(forHTTPHeaderField: "Set-Cookie") {
                             DefaultViewModel.logger.info("New Cookie: \(newCookie)")
                             if self.keyChainService.retrievePassword(for: "Cookie") != nil {

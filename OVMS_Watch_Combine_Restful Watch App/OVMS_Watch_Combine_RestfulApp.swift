@@ -17,3 +17,12 @@ struct OVMS_Watch_Combine_Restful_Watch_AppApp: App {
         }
     }
 }
+
+/* TODO:
+ 
+ When charge is started status.charging > 0 so getCharge() started but when charge stopped status.charging still > 0
+ Need to check if status.charging has changed from 0 to 12 - Charge Started
+ Need to check if charge.charging has changed from 12 to 0 - Charge Stopped
+ Add 2 more cases to CarMode - Started and Stopped
+ 
+*/
