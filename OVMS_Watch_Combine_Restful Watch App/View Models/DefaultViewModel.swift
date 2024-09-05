@@ -17,12 +17,13 @@ class DefaultViewModel: ObservableObject {
     @Published var vehicles = Vehicle.dummy
     var carMode: CarMode {
         get {
-            if status.charging > 0 {
-                return .charging
-            } else if status.caron > 0 {
-                return .driving
-            }
-            return .idle
+            return updateCarmode()
+//            if status.charging > 0 {
+//                return .charging
+//            } else if status.caron > 0 {
+//                return .driving
+//            }
+//            return .idle
         }
     }
     var vehInfo = VehicleInfo.initial
@@ -41,6 +42,8 @@ class DefaultViewModel: ObservableObject {
     let keyChainService = KeychainService()
     private static let logger = Logger(subsystem: Bundle.main.bundleIdentifier!,
                         category: "ViewModel")
+    var statusCharging = 0
+    var charging = 0
     
     init() {
         self.isPresentingSettingsView = false
@@ -53,6 +56,7 @@ class DefaultViewModel: ObservableObject {
             Self.logger.trace("Username = \(self.user) Password = \(self.password) Vehicle: = \(self.vehicleID)")
             initCookie()
         }
+        //updateCarmode()
     }
     
     func connectVehicle(cookie: String) {
@@ -163,12 +167,35 @@ class DefaultViewModel: ObservableObject {
                         }
                     } else {
                         // check for http errors
-                        DefaultViewModel.logger.error("InitCookie - statusCode should be 200, but is \(httpStatus.statusCode)")
+                        DefaultViewModel.logger.error("initCookie() - statusCode should be 200, but is \(httpStatus.statusCode)")
                         DefaultViewModel.logger.error("response = \(String(describing: response))")
                     }
                 }
             }
             urlSession.resume()
         }
+    }
+    
+    func updateCarmode() -> CarMode {
+        if status.charging > statusCharging {
+            DefaultViewModel.logger.info("updateCarmode() - Charging has started")
+            statusCharging = status.charging
+            return .charging
+        }
+        if charge.charging > 0 {
+            charging = charge.charging
+            return .charging
+        }
+        if charge.charging < charging {
+            DefaultViewModel.logger.info("updateCarmode() - Charging has stopped")
+            charging = charge.charging
+            return .idle
+        }
+        if status.caron != 0 {
+            return .driving
+        }
+        charging = charge.charging
+        statusCharging = status.charging
+        return .idle
     }
 }

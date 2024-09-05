@@ -106,12 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				D0D90B412C7DD22D0030DC55 /* OVMS-Watch-Combine-Restful-Watch-App-Info.plist */,
+				D0A525D62C7DBD550014C3D1 /* OVMS_Watch_Combine_RestfulApp.swift */,
 				D0A525E82C7DBDAF0014C3D1 /* Views */,
 				D0A525F22C7DBE070014C3D1 /* View Models */,
 				D0A525FA2C7DBE140014C3D1 /* Models */,
 				D0A526022C7DBE250014C3D1 /* Services */,
 				D0A526052C7DBE250014C3D1 /* Helpers */,
-				D0A525D62C7DBD550014C3D1 /* OVMS_Watch_Combine_RestfulApp.swift */,
 				D0A525DA2C7DBD570014C3D1 /* Assets.xcassets */,
 				D0A525DC2C7DBD570014C3D1 /* Preview Content */,
 			);

@@ -45,7 +45,7 @@ struct WatchView: View {
     let keyChainService = KeychainService()
     private static let logger = Logger(subsystem: Bundle.main.bundleIdentifier!,
                         category: "WatchView")
-    let timer = Timer.publish(every: 60, on: .main, in: .common).autoconnect()
+    let timer = Timer.publish(every: 20, on: .main, in: .common).autoconnect()
     @State var count = 0
     
     var body: some View {
@@ -97,7 +97,7 @@ struct WatchView: View {
                                 .opacity(0.9))
                 })
                 .controlSize(.mini)
-				.tint(carMode.color)
+                .tint(.clear)
                 switch carMode {
                 case .charging:
                     SubView(Text1: "Full", Data1: timeConvert(time: model.charge.charge_etr_full), 
@@ -176,7 +176,7 @@ struct WatchView: View {
         }
         .onReceive(timer) {_ in
             count += 1
-            if count > 5 {
+            if count > 12 {
                 count = 0
                 model.initCookie()
             } else {
@@ -186,12 +186,10 @@ struct WatchView: View {
 						model.getCharge(cookie: myCookie)
 					case .driving:
 						model.getLocation(cookie: myCookie)
+                        model.getStatus(cookie: myCookie)
 					default:
 						model.getStatus(cookie: myCookie)
 					}
-//                    model.getStatus(cookie: myCookie)
-//                    model.getCharge(cookie: myCookie)
-//                    model.getLocation(cookie: myCookie)
                 }
             }
             print("Count = \(count)")
