@@ -18,12 +18,6 @@ class DefaultViewModel: ObservableObject {
     var carMode: CarMode {
         get {
             return updateCarmode()
-//            if status.charging > 0 {
-//                return .charging
-//            } else if status.caron > 0 {
-//                return .driving
-//            }
-//            return .idle
         }
     }
     var vehInfo = VehicleInfo.initial
@@ -56,7 +50,6 @@ class DefaultViewModel: ObservableObject {
             Self.logger.trace("Username = \(self.user) Password = \(self.password) Vehicle: = \(self.vehicleID)")
             initCookie()
         }
-        //updateCarmode()
     }
     
     func connectVehicle(cookie: String) {
@@ -75,7 +68,8 @@ class DefaultViewModel: ObservableObject {
     }
 
     func getCharge(cookie: String) {
-        self.cancellable1 = Webservice().getCharge(cookie: cookie, vehicle: vehicleID)
+
+		self.cancellable1 = Webservice().getCharge(cookie: cookie, vehicle: vehicleID)
             .print()
             .catch{ _ in Just(self.charge)}
             .assign(to: \.charge, on: self)
